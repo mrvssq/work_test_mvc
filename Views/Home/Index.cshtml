@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="card card-default">
+       <div class="card-body">
+            @using (Html.BeginForm("Result", "Home", FormMethod.Post))
+            {
+                <div class="row">
+                    <div class="col col-sm-7">
+                        <input class="form-control" name="text_in" placeholder="String">
+                    </div>
+                    <div class="col col-sm-2">
+                        <input type="text" class="form-control" name="increment" placeholder="Increment">
+                    </div>
+                    <div class="col col-sm-3">
+                        <button type="submit" class="btn btn-success btn-flat form-control">Отправить</button>
+                    </div>
+                </div>
+            }
+       </div>
+    </div>
+</div>

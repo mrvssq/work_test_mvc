@@ -1,0 +1,26 @@
+﻿@model ResultModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="card card-default">
+        <div class="card-body">
+            <p class="lead">Results</p>
+            <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th style="width:50%">Input Data:</th>
+                        <td>@Model.InputString</td>
+                    </tr>
+                    <tr>
+                        <th>Output Data:</th>
+                        <td>@Model.ResultString</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
